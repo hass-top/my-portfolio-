@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="tb_debutcss.css">
+
+</head>
+<body >
+  
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-item active">
+            <div class="nav-icon">🏠</div>
+            <div>Home</div>
+        </a>
+        <a href="#skills" class="nav-item">
+            <div class="nav-icon">🛠️</div>
+            <div>Skills</div>
+        </a>
+        <a href="#projects" class="nav-item">
+            <div class="nav-icon">💼</div>
+            <div>Projects</div>
+        </a>
+        <a href="#certifications" class="nav-item">
+            <div class="nav-icon">📜</div>
+            <div>Certs</div>
+        </a>
+        <a  href="#contact"  class="nav-item" id="contact_id">
+            <div class="nav-icon">✉️</div>
+            <div>Contact</div>
+        </a>
+    </nav>
+    <nav class="social-nav">
+
+        <a href="https://t.me/Hassine" class="social-item" target="_blank">
+            <div class="social-icon">✈️</div>
+            <div>Telegram</div>
+        </a>
+
+        <a href="mailto:triguihassine573@gmail.com" class="social-item">
+            <div class="social-icon">✉️</div>
+            <div>Email</div>
+        </a>
+
+        <a href="https://github.com/hass-top" class="social-item" target="_blank">
+            <div class="social-icon">🐙</div>
+            <div>GitHub</div>
+        </a>
+
+    </nav>
+    <!-- Animation Canvas -->
+    <div id="animationCanvas"></div>
+    
+    <!-- Header Section -->
+    <header id="home">
+        <div class="header-flex"> 
+
+        <div class="header-image left" >
+            <img src="./../mywebside/image/freedom.gif" alt="hahahahahahah"> 
+        </div>
+        <div class="header-content floating">
+            <h1>Hassine trigui </h1>
+            <p>Showcasing my skills, projects, and journey in technology </p>
+           
+    
+
+        
+        <!-- Skills Diagram Circles -->
+        <div class="skills-diagram">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle-center"></div>
+        </div>
+    </div>
+        <div class="header-image right" >
+            <img src="./../mywebside/image/work.gif" alt="hahahahahahah"> 
+        </div>
+        </div>
+    </header>
+    
+     <!-- About Me Section -->
+     <section class="about-me visible">
+        <div class="about-content floating">
+            <div class="about-image">
+                <img src="./../mywebside/image/ana.png" alt="Professional portrait of myself smiling in business casual attire">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I'm Hassine Trigui, a Tunisian student currently studying cybersecurity and cloud computing in Morocco.  
+                    Although I didn’t expect to take this path at first, it has taught me valuable lessons — from building strong friendships to learning how to take responsibility for my own life.  
+                    I chose cybersecurity because it constantly reminds me of the importance of responsibility, while also allowing me to enjoy what I do and grow through challenges.
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container" id="skills">
+        <div class="section-header">
+            <h2>Skills & Expertise</h2>
+            <p>My technical competencies and areas of specialization</p>
+        </div>
+        
+           
+        <div class="skills-container">
+            <div class="skill-category floating">
+                <h3>cybersecurity  </h3>
+                <ul>
+                    <li><i class="fas fa-fire"></i> Firewalls & IDS/IPS: FortiGate, Snort</li>
+                    <li><i class="fas fa-globe"></i> Web Application Security (OWASP Top 10)</li>
+                    <li><i class="fas fa-code"></i> Reverse Engineering</li>
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-cloud"></i> Cloud Computing</h3>
+                <ul>
+                    <li><i class="fas fa-server"></i> Virtualization</li>
+                    <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                    <li><i class="fab fa-react"></i> React.js</li>
+                    <li><i class="fab fa-vuejs"></i> Vue.js</li>
+                    <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                    <li><i class="fas fa-paint-brush"></i> UI/UX Principles</li>
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-lock"></i> Cryptography</h3>
+                <ul>
+                    <li><i class="fas fa-key"></i> Symmetric Encryption (AES, DES)</li>
+                    <li><i class="fas fa-key"></i> Asymmetric Encryption (RSA, ECC)</li>
+                    <li><i class="fas fa-certificate"></i> Public Key Infrastructure (PKI)</li>
+                    <li><i class="fas fa-certificate"></i> Certificate Management (X.509, OpenSSL)</li>
+                    <li><i class="fas fa-shield-virus"></i> Protocols: TLS/SSL, HTTPS, IPsec, SSH</li>
+                    <li><i class="fas fa-envelope"></i> Secure Email: PGP, S/MIME</li>
+                    <li><i class="fas fa-signature"></i> Hashing & Digital Signatures (SHA-2, HMAC)</li>
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-laptop-code"></i> Front-End Development</h3>
+                <ul>
+                    <li><i class="fab fa-html5"></i> HTML5</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-server"></i> Back-End</h3>
+                <ul>
+                    <li><i class="fab fa-php"></i> PHP: Laravel</li>
+                    <li><i class="fab fa-python"></i> Python: Flask</li>
+                    <li><i class="fas fa-plug"></i> API Development: RESTful APIs</li>
+                    <li><i class="fas fa-tasks"></i> Agile Methodologies</li>
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-tools"></i> DevOps</h3>
+                <ul>
+                    <li><i class="fab fa-git"></i> Git & GitHub</li>
+                    <li><i class="fab fa-docker"></i> Docker (beginner)</li>
+                    <li><i class="fab fa-aws"></i> AWS Basics</li>
+                    <li><i class="fas fa-server"></i> Web Servers: Apache, Nginx</li>
+         
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <ul>
+                    <li><i class="fas fa-database"></i> MySQL</li>
+                    <li><i class="fas fa-database"></i> PostgreSQL</li>
+                    <li><i class="fas fa-database"></i> SQLite</li>
+                    <li><i class="fas fa-database"></i> MongoDB</li>
+                    <li><i class="fas fa-database"></i> Oracle</li>
+                
+                </ul>
+            </div>
+            <div class="skill-category floating">
+                <h3><i class="fas fa-wrench"></i>IDEs</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i>  VS Code</li>
+                    <li><i class="fas fa-code"></i> IntelliJ</li>
+                    <li><i class="fas fa-terminal"></i> neovim</li>
+                
+                </ul>
+            </div>
+           
+            <div class="skill-category floating" style="animation-delay: 1s;">
+                <h3>Tools & Platforms</h3>
+                <ul>
+                    <li><i class="fas fa-bug"></i> Burp Suite</li>
+                    <li><i class="fas fa-network-wired"></i> Nmap</li>
+                    <li><i class="fas fa-wifi"></i> Wireshark</li>
+                    <li><i class="fas fa-server"></i> VMware</li>
+                 <li><i class="fas fa-project-diagram"></i> Cisco Packet Tracer</li>
+                <li><i class="fas fa-server"></i> Proxmox VE</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="section-container" id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>i need energie to work </p>
+        </div>
+        
+        <div class="projects-container">
+            <div class="project-card floating">
+                <div class="certification-badge"  style="background: linear-gradient(135deg, rgba(255, 217, 3, 0.596), rgba(0, 255, 200, 0.459));">
+                    <img src="./image/ex.png" alt="never " style=" max-width: 100%; height: 100%;">
+               
+                </div>
+                <div class="project-info">
+                    <h3>automate-math</h3>
+                    <p></p>
+                    
+                    <div class="project-tags">
+                        <span class="project-tag">python</span>
+                        <span class="project-tag">automate</span>
+                        <span class="project-tag">qt5</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/hass-top/automate-math-" class="project-link demo"  target="_blank" 
+                        rel="noopener noreferrer">link github</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-container">
+                <div class="project-card floating">
+                    <div class="certification-badge"  style="background: linear-gradient(135deg, rgba(255, 217, 3, 0.596), rgba(0, 255, 200, 0.459));">
+                        <img src="./image/iptables.png" alt="never " style=" max-width: 45%; height: 100%;">
+                    </div>
+                    <div class="project-info">
+                        <h3>configure iptable</h3>
+                        <p></p>
+                        <h3>in construction </h3>
+                        <div class="project-tags">
+                            <span class="project-tag">linux</span>
+                           
+                        </div>
+                        
+                        <div class="project-links">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            
+            
+        </div>
+    </section>
+        <!--- Certifications Section -->
+        <section class="section-container" id="certifications">
+            <div class="section-header">
+                <h2>My Certifications</h2>
+                <p>
+                    i don't have so much certifications yet, but i'am working on it!<br>
+                    money money money the main purpuse of life 
+                </p>
+            </div>
+            
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+                <div class="certification-card floating">
+                    <div class="certification-badge"  style="background: linear-gradient(135deg, rgba(3, 255, 137, 0.308), rgba(0, 4, 255, 0.315));">
+                        <img src="./image/sec.jpg" >
+                    </div>
+                    <div class="certification-info">
+                        <h3>Blue Team Junior Analyst Pathway Bundl</h3>
+                        <div class="issuer">
+                            <svg width="16" height="16" ></svg>
+                            securityblue.team
+                        </div>
+                        <div class="date">
+                            <svg width="16" height="16" ></svg>
+                            
+                                Issued: may 2025 • No expiration
+                            
+                        </div>
+                            <a class="view-button" href="https://elearning.securityblue.team/home/certificate/963428558"  target="_blank" 
+                            rel="noopener noreferrer">View Credential</a> 
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <br><br>
+            <!-- Certification 2 -->
+            <div class="certification-card floating" style="animation-delay: 0.2s;">
+                <div class="certification-badge" style="background: linear-gradient(135deg, rgba(255, 3, 87, 0.308), rgba(217, 0, 255, 0.315));">
+                    <img src="./image/Untitled.png">
+                </div>
+                <div class="certification-info">
+                    <h3>Fortinet Certified Fundamentals in Cybersecurity</h3>
+                    <div class="issuer">
+                    <svg width="16" height="16" ></svg>
+                    Cybersecurity
+                </div>
+                <div class="date">
+                    <svg width="16" height="16" ></svg>
+                    Date of achievement: June 2, 2025
+                    Valid until: June 2, 2027
+                </div>
+            
+                <br>
+                <a class="view-button" href="https://training.fortinet.com/local/cert/my/certificate.php?badge=84"  target="_blank" 
+                rel="noopener noreferrer">View Credential</a> 
+            </div>
+        </div>
+     </div>
+                        
+
+    </section>
+
+
+</body>
+<script src="tb_scrpit.js"></script>
+</html>
