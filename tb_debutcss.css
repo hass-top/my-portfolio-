@@ -636,8 +636,7 @@ header {
       right: auto;
   }
 }
-
-   /* About Me Section */
+/* About Me Section */
 .about-me {
   padding: 210px 20px;
   max-width: 1000px;
@@ -695,6 +694,18 @@ header {
   margin-bottom: 15px;
   line-height: 1.6;
   opacity: 0.9;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column-reverse; /* Stack text below image */
+  }
+  
+  .about-image, .about-text {
+    flex: none; /* Reset flex to avoid stretching */
+    width: 100%; /* Full width on small screens */
+  }
 }
 /* menu */
 .bottom-nav {
