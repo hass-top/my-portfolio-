@@ -71,9 +71,9 @@ const circle = document.querySelector('.circle-center');
         
         window.addEventListener('scroll', () => {
             const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-            const maxSize = Math.max(window.innerWidth, window.innerHeight) * 2;
+            const maxSize = Math.max(window.innerWidth, window.innerHeight) * 1;
             
-            const newSize = 60 + (scrollPercentage * maxSize);
+            const newSize = 50 + (scrollPercentage * maxSize);
             
             circle.style.width = `${newSize}px`;
             circle.style.height = `${newSize}px`;
