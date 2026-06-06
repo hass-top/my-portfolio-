@@ -2,7 +2,7 @@
 
 import Button from "../ui/Button";
 import Image from "next/image";
-import favicon from "../../image/sec.jpg";
+import favicon from "../../image/freedom.gif";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -10,12 +10,12 @@ export default function Navbar() {
 
   return (
     <header className="w-full border-b border-black/[.08] bg-background/80 backdrop-blur dark:border-white/[.145]">
-      
+
       <div className="mx-auto flex w-full max-w-3xl items-center justify-between px-6 py-4">
 
         {/* logo */}
         <a href="#top" className="font-semibold tracking-tight">
-          <Image src={favicon} alt="favicon" className="h-8 w-8" />
+          <Image src={favicon} alt="favicon" className="h-13 w-13 border-1 border-black-500 rounded-full" />
         </a>
 
         {/* desktop menu */}

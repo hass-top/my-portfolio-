@@ -104,3 +104,30 @@ body {
 .animate-spin-slow {
   animation: spin-slow 12s linear infinite;
 }
+
+
+@keyframes scan {
+  0% {
+    transform: translateX(-100px) skewX(-45deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) skewX(-45deg);
+  }
+}
+
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+@keyframes ribbon {
+  from {
+    left: -40px;
+  }
+  to {
+    left: calc(100% + 40px);
+  }
+}
+
+.animate-ribbon {
+  animation: ribbon 2s linear infinite;
+}

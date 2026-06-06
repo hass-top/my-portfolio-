@@ -37,22 +37,10 @@ export default function ProjectCard({ project }) {
 				</div>
 			) : null}
 
-			<div className="flex flex-wrap gap-2">
-				{project.links?.live ? (
-					<Button href={project.links.live} target="_blank" rel="noreferrer">
-						Live
-					</Button>
-				) : null}
-				{project.links?.source ? (
-					<Button
-						href={project.links.source}
-						target="_blank"
-						rel="noreferrer"
-						variant="secondary"
-					>
-						Source
-					</Button>
-				) : null}
+			<div className="flex flex-wrap gap-2 mt-2">
+				<Button href={`/project/${project.slug}`} variant="primary">
+					View Details
+				</Button>
 			</div>
 		</Card>
 	);

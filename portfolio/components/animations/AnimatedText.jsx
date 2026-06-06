@@ -31,7 +31,10 @@ export default function AnimatedText({
     );
 
     observer.observe(element);
-    return () => observer.unobserve(element);
+    return () =>  {
+      observer.unobserve(element);
+      observer.disconnect();   
+    };
   }, []); 
   return (
     <p
@@ -43,7 +46,7 @@ export default function AnimatedText({
       <span aria-hidden="true">
         {text.split("").map((char, index) => (
           <span
-            key={`${char}-${index}`}
+            key={`${index}`}
             className={cx(
               "inline-block",
               isInView ? "animate-fadeIn" : "opacity-0"
